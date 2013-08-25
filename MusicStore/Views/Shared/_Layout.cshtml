@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div id="header">
+        <h1>ASP.NET MVC MUSIC STORE</h1>
+        <ul id="navlist">
+          <li class="first">
+            <a href="/" id="current">Home</a>
+          </li>
+          <li>
+            <a href="/Store/">Store</a>
+          </li>
+        </ul>
+    </div>
+    <div>
+      @RenderBody()
+    </div>
+</body>
+    @RenderSection("scripts", required: false)
+</html>
